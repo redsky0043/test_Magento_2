@@ -1,0 +1,29 @@
+$color-white: #ffffff;
+$color-gray: #868686;
+$color-orange: #ffbb42;
+$color-blue: #709dca;
+
+$palette-primary: $color-white;
+$palette-secondary: $color-gray;
+$palette-third: $color-blue;
+$palette-active: $color-orange;
+
+%gotham-black {
+    font-family: "Gotham Black", sans-serif;
+    font-weight: 900;
+}
+
+%gotham-light {
+    font-family: "Gotham Light", sans-serif;
+    font-weight: 300;
+}
+
+%lato-regular {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+%open-sans-light {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
