@@ -43,11 +43,37 @@ button {
     border: none;
     outline: none;
     background: none;
+    cursor: pointer;
+}
+
+input {
+    outline: none;
 }
 
 .container {
     max-width: 1170px;
     padding: 0 15px;
     margin: 0 auto;
+}
+
+.button {
+    width: 100%;
+    font-size: 14px;
+    line-height: 16px;
+    color: $palette-primary;
+    background-color: $palette-active;
+    text-transform: uppercase;
+    @extend %open-sans-regular;
+    padding: 15px 42px;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+
+    &:hover {
+        box-shadow: 0px 0px 20px 0px $palette-active;
+    }
+
+    &:active {
+        box-shadow: 0px 0px 20px 5px $palette-active;
+    }
 }
 

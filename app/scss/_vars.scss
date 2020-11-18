@@ -1,12 +1,20 @@
 $color-white: #ffffff;
+$color-light-gray: #a9a9a9;
 $color-gray: #868686;
+$color-dark-gray: #7b7b7b;
 $color-orange: #ffbb42;
-$color-blue: #709dca;
+$color-light-blue: #709dca;
+$color-blue: #1ca8dd;
+$color-gren: #394b50;
 
 $palette-primary: $color-white;
 $palette-secondary: $color-gray;
-$palette-third: $color-blue;
+$palette-bg: $color-light-blue;
+$palette-dots: $color-blue;
 $palette-active: $color-orange;
+$palette-input-text: $color-light-gray;
+$palette-title: $color-gren;
+$palette-paragraph: $color-dark-gray;
 
 %gotham-black {
     font-family: "Gotham Black", sans-serif;
@@ -18,12 +26,27 @@ $palette-active: $color-orange;
     font-weight: 300;
 }
 
+%lato-light {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
 %lato-regular {
     font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+%lato-bold {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+%open-sans-light {
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
 }
 
 %open-sans-regular {
     font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
 }

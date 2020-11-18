@@ -8,7 +8,8 @@
   <title>Magento_2</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans&display=swap"
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400&display=swap"
     rel="stylesheet">
 </head>
 
@@ -58,23 +59,28 @@
         <p class="banner__text">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum typesetting
         </p>
-        <form class="banner__form">
-          <input class="banner__input" type="text" placeholder="Full Name">
-          <input class="banner__input" type="email" placeholder="Email Address">
-          <input class="banner__input" type="phone" placeholder="Phone Number">
-          <button class="banner__btn" type="submit">
+        <form class="banner__form" name="user-data">
+          <input class="banner__input" type="text" placeholder="Full Name" name="Name" required>
+          <input class="banner__input" type="email" placeholder="Email Address" name="Email" required>
+          <input class="banner__input" type="tel" placeholder="Phone Number" name="Phone" required>
+          <button class="banner__btn button" type="submit">
             Request a quote
           </button>
         </form>
         <div class="banner__slider">
-          <div class="banner__slider-item">
-            <img class="banner__slider-img" src="./images/slider.png" alt="slider">
-          </div>
-          <div class="banner__slider-item">
-            <img class="banner__slider-img" src="./images/slider.png" alt="slider">
-          </div>
-          <div class="banner__slider-item">
-            <img class="banner__slider-img" src="./images/slider.png" alt="slider">
+          <img class="banner__slider-img" src="./images/laptop.png" alt="slider">
+          <div class="banner__slider-wrapper">
+            <div class="slider">
+              <div class="slider-item">
+                <img class="slider-img" src="./images/slide-1.jpg" alt="slider">
+              </div>
+              <div class="slider-item">
+                <img class="slider-img" src="./images/slide-2.jpg" alt="slider">
+              </div>
+              <div class="slider-item">
+                <img class="slider-img" src="./images/slide-3.jpg" alt="slider">
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -90,9 +96,12 @@
         <p class="steps__text">
           Lorem Ipsum is simply dummy Business industry
         </p>
-        <ul class="steps__steps">
-          <li class="steps__steps-list">
-            <img class="steps__steps-img" src="./images/steps-1.png" alt="steps">
+        <ul class="steps__steps-list">
+          
+          <li class="steps__steps-item">
+            <div class="steps__item-top">
+              <img class="steps__steps-img" src="./images/steps-1.png" alt="steps">
+            </div>
             <h3 class="steps__steps-title">
               step 1
             </h3>
@@ -101,8 +110,11 @@
               ustry. Lorem Ipsum has been
             </p>
           </li>
-          <li class="steps__steps-list">
-            <img class="steps__steps-img" src="./images/steps-2.png" alt="steps">
+
+          <li class="steps__steps-item">
+            <div class="steps__item-top">
+              <img class="steps__steps-img" src="./images/steps-2.png" alt="steps">
+            </div>
             <h3 class="steps__steps-title">
               step 2
             </h3>
@@ -111,8 +123,11 @@
               ustry. Lorem Ipsum has been
             </p>
           </li>
-          <li class="steps__steps-list">
-            <img class="steps__steps-img" src="./images/steps-3.png" alt="steps">
+
+          <li class="steps__steps-item">
+            <div class="steps__item-top">
+              <img class="steps__steps-img" src="./images/steps-3.png" alt="steps">
+            </div>
             <h3 class="steps__steps-title">
               step 3
             </h3>
@@ -121,8 +136,11 @@
               ustry. Lorem Ipsum has been
             </p>
           </li>
-          <li class="steps__steps-list">
-            <img class="steps__steps-img" src="./images/steps-4.png" alt="steps">
+
+          <li class="steps__steps-item">
+            <div class="steps__item-top">
+              <img class="steps__steps-img" src="./images/steps-4.png" alt="steps">
+            </div>
             <h3 class="steps__steps-title">
               step 4
             </h3>
@@ -131,8 +149,9 @@
               ustry. Lorem Ipsum has been
             </p>
           </li>
+          
         </ul>
-        <button class="steps_btn">
+        <button class="steps_btn button">
           Get start Now
         </button>
       </div>
