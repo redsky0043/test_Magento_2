@@ -133,29 +133,50 @@
     }
 
     &__slider {
-        width: 647px;
+        width: 100%;
+        max-width: 648px;
         margin: 0 auto;
         position: relative;
+        display: flex;
+        justify-content: center;
 
         &-wrapper {
             position: absolute;
             top: 19px;
-            left: 103px;
-            width: 445px;
+            left: 43px;
+            width: 100%;
+            max-width: 566px;
             cursor: pointer;
         }
+
+        &-btn {
+            height: 40px;
+        }
     }
+}
+
+.slider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slick-list {
+    width: 445px;
 }
 
 .slick-dots {
     margin: 0 auto;
     width: 60px;
-    height: 15px;
+    height: 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
-    top: 81px;
+    position: absolute;
+    top: 347px;
+    left: 50%;
+    transform: translateX(-30px);
 
     & li {
         width: 16px;
@@ -209,41 +230,32 @@
         max-width: 228px;
         position: relative;
 
+        &::after {
+            content: "";
+            position: absolute;
+            width: 129px;
+            height: 33px;
+            left: 100%;
+            transform: translateX(-20%);
+        }
+
         &:nth-child(1) {
             &::after {
-                content: "";
-                position: absolute;
-                width: 129px;
-                height: 32px;
                 top: 0;
-                left: 100%;
-                transform: translateX(-20%);
                 background-image: url(../images/Arrow_1.png);
             }
         }
 
         &:nth-child(2) {
             &::after {
-                content: "";
-                position: absolute;
-                width: 129px;
-                height: 33px;
                 top: 32px;
-                left: 100%;
-                transform: translateX(-20%);
                 background-image: url(../images/Arrow_2.png);
             }
         }
 
         &:nth-child(3) {
             &::after {
-                content: "";
-                position: absolute;
-                width: 129px;
-                height: 32px;
                 top: 0;
-                left: 100%;
-                transform: translateX(-20%);
                 background-image: url(../images/Arrow_3.png);
             }
         }
