@@ -1,5 +1,160 @@
 @media (max-width: 1200px) {
-    .steps__steps-list {
-        grid-template-columns: 1fr 1fr; 
+    .steps {
+        &__steps-list {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &__steps-item {
+            &::after {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .header {
+        position: fixed;
+        height: 95px;
+        width: 100%;
+        background-color: #fff;
+        z-index: 99;
+
+        &__menu {
+            display: none;
+        }
+
+        &__menu-mob {
+            display: block;
+            z-index: 999;
+        }
+    }
+
+    .banner {
+        padding-top: 195px;
+
+        &::before {
+            min-height: 790px;
+        }
+
+        &__form {
+            flex-direction: column;
+        }
+
+        &__input {
+            margin-right: 0;
+            max-width: 50%;
+            min-width: 280px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .banner {
+        &__slider {
+            width: 500px;
+
+            &-wrapper {
+                top: 14px;
+                width: 85%;
+            }
+        }
+
+        &__slider-img {
+            width: 100%;    
+        }
+    }
+    
+    .slick-list {
+        width: 81%;
+    }
+
+    .slider-img {
+        height: 210px;
+    }
+
+    .slick-dots {
+        top: 270px;
+    }
+}
+
+@media (max-width: 550px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .steps {
+        &__steps-list {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .banner {
+        &__slider {
+            width: 300px;
+
+            &-wrapper {
+                top: 8px;
+            }
+        }
+    }
+
+    .slider-img {
+        height: 130px;
+    }
+
+    .slick-dots {
+        top: 200px;
+    }
+} 
+
+@media (max-width: 420px) {
+    .banner {
+        &::before {
+            min-height: 780px;
+        }
+    }
+}
+
+@media (max-width: 380px) {
+    .banner {
+        padding-top: 150px;
+        margin-bottom: 70px;
+
+        &::before {
+            min-height: 760px;
+        }
+    }
+
+    .steps {
+        &__text {
+            margin-bottom: 40px;
+        }
+
+    }
+
+    .slick-dots {
+        top: 170px;
+    }
+}
+
+@media (max-height: 670px) {
+    .header__menu__list-item {
+        margin: 0 !important;
+    }
+}
+
+@media (max-height: 320px) {
+    .banner {
+        &::before {
+            min-height: 850px;
+        }
+    }
+}
+
+@media (max-height: 280px) {
+    .header__menu__list-item {
+        padding: 8px 20px !important;
     }
 }

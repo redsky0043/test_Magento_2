@@ -2,6 +2,7 @@
 @import "libs";
 @import "fonts";
 @import "global";
+@import "menu-mob";
 
 .header {
     width: 100%;
@@ -45,6 +46,10 @@
                 background-color: $palette-active;
             }
         }
+    }
+
+    &__menu-mob {
+        display: none;
     }
 }
 
@@ -102,11 +107,12 @@
         max-width: 281px;
         background-color: $palette-primary;
         border: none;
-        padding: 15px 28px 15px 41px;
+        padding: 15px 10px 15px 41px;
         margin-right: 10px;
         font-size: 13px;
         line-height: 16px;
         border-radius: 3px;
+        transition: all .5s ease;
         background-size: 16px;
         background-repeat: no-repeat;
         background-position: 15px center;
@@ -126,6 +132,10 @@
         &::placeholder {
             color: $palette-input-text;
         }
+
+        &:focus {
+            box-shadow: 0px 0px 10px 3px $palette-active;
+        }
     }
 
     &__btn {
@@ -143,14 +153,23 @@
         &-wrapper {
             position: absolute;
             top: 19px;
-            left: 43px;
+            // left: 43px;
+            left: 50%;
+            transform: translateX(-49.6%);
             width: 100%;
             max-width: 566px;
-            cursor: pointer;
         }
 
         &-btn {
             height: 40px;
+            width: 20px;
+            display: flex;
+            align-items: center;
+            transition: all .3s ease;
+
+            &:hover {
+                transform: scale(1.2);
+            }
         }
     }
 }
@@ -164,6 +183,7 @@
 
 .slick-list {
     width: 445px;
+    cursor: pointer;
 }
 
 .slick-dots {
@@ -177,6 +197,7 @@
     top: 347px;
     left: 50%;
     transform: translateX(-30px);
+    cursor: pointer;
 
     & li {
         width: 16px;
@@ -222,6 +243,7 @@
         align-items: center;
         justify-items: center;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 40px 20px;
         margin-bottom: 121px;
     }
 
@@ -234,7 +256,7 @@
             content: "";
             position: absolute;
             width: 129px;
-            height: 33px;
+            height: 32px;
             left: 100%;
             transform: translateX(-20%);
         }
@@ -249,6 +271,7 @@
         &:nth-child(2) {
             &::after {
                 top: 32px;
+                height: 33px;
                 background-image: url(../images/Arrow_2.png);
             }
         }
